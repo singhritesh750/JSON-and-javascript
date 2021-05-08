@@ -1,3 +1,7 @@
+//NOTES: TO RUN THIS CODE, UN-COMMENT OUT 1 CODE BLOCK AT-A-TIME ONLY AND, AFTER RUNNING PLEASE DO NOT FORGET TO AGAIN COMMNT IT OUT
+
+
+
 //1. console.log("sita")
 
 //2. var a = { "type": "success", "value": [{ "id": 101, "joke": "Archaeologists unearthed an old english dictionary dating back to the year 1236. It defined &quot;victim&quot; as &quot;one who has encountered Chuck Norris&quot;", "categories": [] }, { "id": 125, "joke": "Simply by pulling on both ends, Chuck Norris can stretch diamonds back into coal.", "categories": [] }, { "id": 284, "joke": "Chuck Norris' first job was as a paperboy. There were no survivors.", "categories": [] }, { "id": 61, "joke": "Chuck Norris once ate a whole cake before his friends could tell him there was a stripper in it.", "categories": [] }, { "id": 302, "joke": "Chuck Norris doesn't go on the internet, he has every internet site stored in his memory. He refreshes webpages by blinking.", "categories": [] }, { "id": 327, "joke": "Chuck Norris once ordered a steak in a restaurant. The steak did what it was told.", "categories": [] }] }
@@ -127,7 +131,7 @@ var dynamic_ = 1
 console.log(b1["ROLL" + dynamic_])
 console.log(b1["ROLL"+ (++dynamic_)])*/
 
-/*var b1 = {student: [{ 'name': "abc", ROLL1: '10' },		//14(b). incorrect syntax(undefined-> no element as[“ROLL”] inside b1)(Dynamically variable-looping )
+/*var b1 = {student: [{ 'name': "abc", ROLL1: '10' },		//14(b). incorrect syntax(undefined-> no element as[â€œROLLâ€] inside b1)(Dynamically variable-looping )
 					{ "name": "abc", ROLL2: '11' },
 					{ name: "abc", ROLL3: '12' }]}
 var dynamic_ = 1
