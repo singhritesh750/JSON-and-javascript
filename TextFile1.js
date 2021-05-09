@@ -146,7 +146,7 @@ var dynamic_ = 1
 console.log(b1["student"][dynamic_-1]["ROLL" + dynamic_])
 console.log(b1["student"][dynamic_]["ROLL"+ (++dynamic_)])*/
 
-/*var b1 = {[{ 'name': "abc", ROLL1: '10' },				//15(a). incorrect syntax-variable as arrary
+/*var b1 = {[{ 'name': "abc", ROLL1: '10' },			//15(a). incorrect syntax-variable as arrary
 			{ "name": "abc", ROLL2: '11' },
 			{ name: "abc", ROLL3: '12' }] : student
 		}
@@ -162,7 +162,7 @@ var dynamic_ = 1
 console.log(b1[dynamic_ - 1]["ROLL" + dynamic_])
 console.log(b1[dynamic_]["ROLL" + (++dynamic_)])*/
 
-var b1 = {student: [{ 'name': "abc", ROLL1: '10' },	//16(a). syntax-query values as array (Dynamically variable-looping )
+/*var b1 = {student: [{ 'name': "abc", ROLL1: '10' },		//16(a). syntax-query values as array (Dynamically variable-looping )
 					{ "name": "abc", ROLL2: '11' },
 					{ name: "abc", ROLL3: '12' }]
 		}
@@ -178,7 +178,56 @@ for (var dynamic_ in b1.student)
 	//console.log(b1.student[dynamic_].(this["ROLL"+(dynamic_+1)]))	//SyntaxError: Unexpected token '('
 	//this[] -> IS ONLY USE TO CHECK AND SEARCH THE OBJECTS DEFINED IN SCRIPT AND NOT THE VARIABLES
 
-	console.log((b1.student[dynamic_])["ROLL" + (++dynamic_)])			//correct syntax
-		}
+	console.log((b1.student[dynamic_])["ROLL" + (++dynamic_)])	//CORRECT syntax
+		}*/
 
+/*var output = document.getElementById("output")		//17(a). InCorrect(not all on page) Statically outputting results on webpage(predefined input)
+var b1 = {student: [{ 'name': "abc", ROLL1: '10' },	
+	{ "name": "abc", ROLL2: '11' },
+	{ name: "abc", ROLL3: '12' }]
+	}
+output.innerHTML = "<h1>This is fetching data from JSON File </h1>"
+var dynamic1_ = b1.student[0].ROLL1
+var dynamic2_ = b1.student[1].ROLL2
+var dynamic3_ = b1.student[2].ROLL3
+output.innerHTML = dynamic1_
+output.innerHTML = dynamic2_
+output.innerHTML = dynamic3_*/
 
+/*var output = document.getElementById("output")		//17(b). InComplete(not all on page) Statically outputting results on webpage(predefined input)
+var b1 = {student: [{ 'name': "abc", ROLL1: '10' },
+	{ "name": "abc", ROLL2: '11' },
+	{ name: "abc", ROLL3: '12' }]
+	}
+output.innerHTML = "<h1>This is fetching data from JSON File </h1>"
+var dynamic1_ = b1.student[0].ROLL1
+var dynamic2_ = b1.student[1].ROLL2
+var dynamic3_ = b1.student[2].ROLL3
+output.innerHTML = dynamic1_
+//output.innerHTML = dynamic1_ + dynamic2_ + dynamic3_*/
+//output.innerHTML = dynamic1_ +" "+ dynamic2_ +" " + dynamic3_*/
+
+/*var output = document.getElementById("output")		//17(c). InComplete Statically outputting results on webpage(predefined input)
+var b1 = {student: [{ 'name': "abc", ROLL1: '10' },
+	{ "name": "abc", ROLL2: '11' },
+	{ name: "abc", ROLL3: '12' }]
+	}
+output.innerHTML = "<h1>This is fetching data from JSON File </h1>"
+var dynamic1_ = parseInt(b1.student[0].ROLL1)
+var dynamic2_ = parseInt(b1.student[1].ROLL2)
+var dynamic3_ = parseInt(b1.student[2].ROLL3)
+output.innerHTML = dynamic1_ + dynamic2_ +  dynamic3_
+output.innerHTML = dynamic1_ +" "+ dynamic2_+" " + dynamic3_*/
+
+/*var output = document.getElementById("output")		//17(d). Correctly Statically outputting results on webpage(predefined input)
+var b1 = {student: [{ 'name': "abc", ROLL1: '10' },
+	{ "name": "abc", ROLL2: '11' },
+	{ name: "abc", ROLL3: '12' }]
+	}
+var container = "<h1>This is fetching data from JSON File </h1>"
+var dynamic1_ = parseInt(b1.student[0].ROLL1)
+var dynamic2_ = parseInt(b1.student[1].ROLL2)
+var dynamic3_ = parseInt(b1.student[2].ROLL3)
+container += dynamic1_ + dynamic2_ + dynamic3_
+container += dynamic1_ + " " + dynamic2_ + " " + dynamic3_
+output.innerHTML = container*/
