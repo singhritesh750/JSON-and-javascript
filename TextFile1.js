@@ -231,3 +231,14 @@ var dynamic3_ = parseInt(b1.student[2].ROLL3)
 container += dynamic1_ + dynamic2_ + dynamic3_
 container += dynamic1_ + " " + dynamic2_ + " " + dynamic3_
 output.innerHTML = container*/
+
+/*var output = document.getElementById("output")		//17(e). Correctly LOOPING & outputting results on webpage for Dynamical data(predefined input)
+var b1 = {student: [{ 'name': "aBC", ROLL1: '10' },
+		{ "name": "AbC", ROLL2: '11' },
+		{ name: "ABc", ROLL3: '12' }]
+	}
+var container = "<h1>This is fetching data from JSON File </h1>"
+for (var x in b1.student)
+	{container += b1.student[x]["name"] + " " + b1.student[x]["ROLL" + (parseInt(x) + 1)] + " "
+	}
+output.innerHTML = container*/
