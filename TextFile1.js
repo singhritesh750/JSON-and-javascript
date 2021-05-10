@@ -253,3 +253,4 @@ output.innerHTML = "<h1>This is fetching data from JSON File </h1>"
 for (var dynamic_ in b1.student)
 	{output.innerHTML += `<h1>${b1.student[dynamic_]["ROLL"+(parseInt(dynamic_)+ 1)]}</h1>`
 	}*/
+
